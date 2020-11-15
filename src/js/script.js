@@ -69,12 +69,12 @@
   }
   aos_init();
   
-  
   var $hamburger = $(".hamburger");
-  $hamburger.on("click", function(e) {
-  $hamburger.toggleClass("is-active");
-	  // Do something else, like open/close menu
-  });
+  $('.collapse').on('show.bs.collapse', function () {
+	  $hamburger.addClass("is-active");
+  }).on('hide.bs.collapse', function () {
+	  $hamburger.removeClass("is-active");
+  })
   
   // gallery page section
   var galleryImages = '';
