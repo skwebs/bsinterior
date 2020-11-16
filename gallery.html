@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
  <!-- Required meta tags -->
   <title>Gallery | Bs Enterprises - Home Interior, Interior Design, Interior Decoration.</title>
   <meta name="description" content="BS Enterprises is Interior Designers in Bangalore. Budget home interior Designer and Decoration for Home, Office, Apartments in Bangalore with latest designs.">
@@ -45,11 +46,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./src/vendor/bootstrap/4.5.0/bootstrap.min.css">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./src/vendor/animate-css/4.1.0/animate.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./src/vendor/aos/2.3.4/aos.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./src/vendor/waves/0.7.6/waves.min.css">
+  <link rel="stylesheet" href="./src/vendor/venobox/venobox.css">
   <link rel="stylesheet" href="./src/css/hamburger.css">
   
   <!-- style CSS -->
@@ -130,7 +127,7 @@
       <section class="footer__social py-1 bg-primary">
         <div class="footer__social_icon container text-light center-center">
           <ul class="d-none d-md-flex">
-            <li>Follow us on : <in the morning/li>
+            <li>Follow us on : <li>
           </ul>
           <ul>
             <li class="ig float-icon"><a href="https://www.instagram.com/bs_enterprises_7869/"><i class="fa fa-instagram"></i></a></li>
@@ -167,10 +164,7 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="./src/vendor/jquery/3.5.1/jquery.min.js"></script>
   <script src="./src/vendor/bootstrap/4.5.0/bootstrap.bundle.min.js"></script>
-  <script src="./src/vendor/aos/2.3.4/aos.js"></script>
-  <script src="./src/vendor/counterup/counterup.min.js"></script>
   <script src="./src/vendor/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="./src/vendor/waves/0.7.6/waves.min.js"></script>
   <script src="./src/vendor/venobox/venobox.min.js"></script>
   <!--
   <script src="./src/vendor/wow-js/1.1.2/wow.min.js"></script>
@@ -178,27 +172,30 @@
   <script src="./src/js/script.js"></script>
 
   <script>
-  $(()=>{
-    var galleryImages = '';
-    for(var i=1;i<40;i++){
-    galleryImages += '<div class="col-4 col-md-3 col-lg-2 p-1"  data-aos="fade" data-aos-delay="300"><a class="venobox" data-gall="bsGallery" href="./src/img/gallery/wa/gallery'+i+'.jpg" ><img src="./src/img/gallery/wa/gallery'+i+'.jpg" ></a></div>';
-    }
-    
-    $("#imgBox").html(galleryImages);
-    $(".venobox").venobox({
-    framewidth : '400px',                            // default: ''
-    frameheight: '100%',                            // default: ''
-    border     : '10px',                             // default: '0'
-    bgcolor    : '#aaa',                          // default: '#fff'
-    titleattr  : 'data-title',                       // default: 'title'
-    numeratio  : true,                               // default: false
-    infinigall : true,
-    //spinner    : 'three-bounce',                         // default: false
-    share      : ['facebook', 'twitter', 'download'] // default: []
-    });
-    
-    })
-    
+
+  !(function ($) {
+  "use strict";
+  
+  // gallery page section
+  var galleryImages = '';
+  for(var i=1;i<40;i++){
+  galleryImages += '<div class="col-4 col-md-3 col-lg-2 p-1"  ><a class="venobox" data-gall="bsGallery" href="./src/img/gallery/wa/gallery'+i+'.jpg" ><img src="./src/img/gallery/wa/gallery'+i+'.jpg" ></a></div>';
+  }
+  
+  $("#imgBox").html(galleryImages);
+  $(".venobox").venobox({
+  framewidth : '400px',                            // default: ''
+  frameheight: '100%',                            // default: ''
+  border     : '10px',                             // default: '0'
+  bgcolor    : '#aaa',                          // default: '#fff'
+  titleattr  : 'data-title',                       // default: 'title'
+  numeratio  : true,                               // default: false
+  infinigall : true,
+  //spinner    : 'three-bounce',                         // default: false
+  share      : ['facebook', 'twitter', 'download'] // default: []
+  });
+  
+  })(jQuery);
   </script>
 </body>
 
