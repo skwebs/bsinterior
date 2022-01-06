@@ -5,15 +5,9 @@
 * Browsers: last 2 version
 */
 
-.navbar 
-{
-
+.navbar-brand {
+  height: 3.5rem;
 }
-.navbar-brand 
-{
-height:3.5rem;
-}
-.navbar-brand img
-{
-height:100%;
+.navbar-brand img {
+  height: 100%;
 }

@@ -5,73 +5,77 @@
 * Browsers: last 2 version
 */
 
-.footer__social_icon{background:;-webkit-box-orient:horizontal !important;-webkit-box-direction:normal !important;-ms-flex-direction:row !important;flex-direction:row !important;color:grey;}
-  .footer__social_icon ul{
-  margin:0 5px;
-  padding:0;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  }
-  .footer__social_icon ul li{
-  list-style:none;
-  margin:0 5px;
-  }
-  .footer__social_icon ul li a{
-  position:relative;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-pack:center;
-      -ms-flex-pack:center;
-          justify-content:center;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  width:40px;
-  height:40px;
-  overflow:hidden;
-  border-radius:50%;
-  text-decoration:none;
-  font-size:1.25rem;
-  color:#fff;
-  -webkit-transition:all .5s;
-  transition:all .5s;
-  }
-  
-  .footer__social_icon ul li a .fa{
-  -webkit-transition:.5s;
-  transition:.5s;
-  }
-  footer__social_icon ul li a:hover{
-  border:1px solid #fff;
-  border-radius:50%;
-  overflow:hidden;
-  }
-  .footer__social_icon ul li a:hover .fa{
-  color:#fff;
-  -webkit-transform:scale(.85);
-          transform:scale(.85);
-  }
-  
-  
-  .footer__links a{
-  margin:0px 10px;
-  display:inline-block;
-  color:#ccc !important;
-  text-decoration:none;
-  -webkit-transition:.5s;
-  transition:.5s;
-  }
-  .footer__links a:hover{
-  color:#fff !important;
-  font-weight:bold;
-  -webkit-transform:translateX(3px);
-          transform:translateX(3px);
-  }
-  
-  .copyright {
-  background:rgba(0,0,0,.35);
-  ackground:#212429;
-  color:grey;
-  }
+.footer__social_icon {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+  color: grey;
+}
+.footer__social_icon ul {
+  margin: 0 5px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__social_icon ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+.footer__social_icon ul li a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer__social_icon ul li a .fa {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer__social_icon ul li a:hover {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.footer__social_icon ul li a:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+.footer__links a {
+  margin: 0px 10px;
+  display: inline-block;
+  color: #ccc !important;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer__links a:hover {
+  color: #fff !important;
+  font-weight: bold;
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+
+.copyright {
+  background: rgba(0, 0, 0, 0.35);
+  color: grey;
+}
